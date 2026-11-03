@@ -1,0 +1,31 @@
+{
+  "result_type": "MEASURED_SMOKE",
+  "training_mode": "full_finetune",
+  "epochs": 2,
+  "validation_examples": 8,
+  "metric": "validation_macro_f1",
+  "runs": [
+    {
+      "seed": 42,
+      "validation_macro_f1": 0.55
+    },
+    {
+      "seed": 43,
+      "validation_macro_f1": 0.5166666666666666
+    },
+    {
+      "seed": 44,
+      "validation_macro_f1": 0.5333333333333333
+    }
+  ],
+  "mean": 0.5333333333333333,
+  "range_min": 0.5166666666666666,
+  "range_max": 0.55,
+  "spread": 0.03333333333333344,
+  "baseline_validation_macro_f1": 0.6666666666666666,
+  "test_used_for_seed_selection": false,
+  "limitations": [
+    "tiny synthetic dataset",
+    "only 8 validation examples"
+  ]
+}
