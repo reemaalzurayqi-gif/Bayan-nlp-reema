@@ -18,8 +18,9 @@ The project builds and evaluates an NLP pipeline across multiple tasks while kee
 ### Tokenization
 - Measured Token Fertility and truncation.
 - Evaluated Arabic and English separately.
-- Compared the local tokenizer with mBERT using the same Token Fertility metric.
-- Documented tokenizer limitations.
+- Compared the local tokenizer with mBERT on five synthetic texts.
+- The local tokenizer produced four [UNK] tokens across two Arabic texts; mBERT produced none in these samples.
+- Kept the local tokenizer as the Day 1 teaching baseline and documented its Arabic coverage limitation.
 
 ### Attention and Transformers
 - Implemented scaled dot-product attention.
